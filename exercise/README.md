@@ -24,7 +24,7 @@ Sometimes, the join table represents an idea that lends itself to a better name.
 - `psql -f users.sql`
 - `psql -f users_movies.sql`
 
-After that, you are all set to write the queries requested below.
+After that, you are all set to write the queries requested in `queries.sql`.
 
 ## Instructions
 For this lab, you are expected to use the psql command line interface.
@@ -56,4 +56,4 @@ movies_lab_db=#
 
 Based on the output above, the `queries.sql` file includes a `SELECT * FROM users;` query.
 
-Remember to run the SQL file in the terminal or shell as you solve each query.
+**Remember to run the SQL file in the terminal or shell as you solve each query.**
