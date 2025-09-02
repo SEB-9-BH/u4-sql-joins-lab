@@ -21,12 +21,6 @@ Next, `cd` into your new cloned directory, `u4-sql-joins-lab`:
 cd u4-sql-joins-lab
 ```
 
-Create a file for the lesson:
-
-```bash
-touch exercises.py
-```
-
 Open the project's folder in your code editor:
 
 ```bash
