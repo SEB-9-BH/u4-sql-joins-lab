@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab you will be writing queries to gain insight into our movies database. The `movies_db_lab` consists of four tables.
+In this lab you will be writing queries to gain insight into our movies database. The `movies_lab_db` consists of four tables.
 
 - The `movies` table is comprised of several movie instances which have a `title`, `synopsis` and `director_id`.
 - The `directors` table is a collection of directors, storing only their `name` as a string.
