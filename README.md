@@ -4,7 +4,7 @@
 
 ## About
 
-In this lab, students will practice applying SQL joins to combine data from multiple tables. Working with a movies database, they will join tables containing directors, movies, and users who “favorite” those movies. For each exercise, you will write a query to retrieve results from joined data.
+In this lab, you will practice applying SQL joins to combine data from multiple tables. Working with a movies database, you will join tables containing directors, movies, and users who “favorite” those movies. For each exercise, you will write a query to retrieve results from joined data.
 
 By the end of this lab, you should have a deeper understanding of one-to-many and many-to-many relationships, and how to pull meaningful data from a relational database using SQL joins.
 
