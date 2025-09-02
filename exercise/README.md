@@ -27,11 +27,11 @@ Sometimes, the join table represents an idea that lends itself to a better name.
 After that, you are all set to write the queries requested below.
 
 ## Instructions
-**For this lab, you are expected to use the psql command line interface.**
+For this lab, you are expected to use the psql command line interface.
 
-**See the `queries.sql` file inside of the movies_db directory.**
+See the `queries.sql` file inside of the movies_db directory.
 
-**Run your queries in the psql shell with the `\i` command: `\i ./queries.sql` or**
+You can run your queries in the psql shell with the `\i` command: `\i ./queries.sql` or directly in the terminal:
 
 **`psql -f queries.sql`**
 
@@ -56,3 +56,4 @@ movies_lab_db=#
 
 Based on the output above, the `queries.sql` file includes a `SELECT * FROM users;` query.
 
+Remember to run the SQL file in the terminal or shell as you solve each query.
