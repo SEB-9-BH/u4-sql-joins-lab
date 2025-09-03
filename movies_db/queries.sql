@@ -4,20 +4,36 @@ SELECT * FROM users;
 
 -- 1. List all the movie titles and their corresponding directors.
 
-
+SELECT m.title AS movie_title, d.name AS director_name
+FROM directors d
+JOIN movies m ON d.director_id = m.director_id;
 
 -- 2. Select the movie title and user name for all of the "favorites" represented by the `users_movies` table.
 
-
+SELECT m.title AS movie_title, u.name AS user_name
+FROM users u
+JOIN movies m ON u.user_id = m.movie_id;
 
 -- 3. List the movies with the number of favorites they have.
 
-
+SELECT m.title, COUNT(*) 
+FROM users_movies u
+JOIN movies m on m.movie_id = u.movie_id
+GROUP BY u.movie_id , m.title;
 
 -- 4. List the names of directors along with the number of favorites that exist for all of the movies they've made, ordered by number of favorites descending.
 
-
+SELECT name, COUNT(*) 
+FROM directors d
+JOIN movies m ON m.director_id = d.director_id
+JOIN users_movies u ON u.movie_id = m.movie_id
+GROUP BY d.name;
 
 -- 5. List the user name, director name and favorite count of all of the user/director combinations (based on the `users_movies` table).
 
-
+SELECT u.name AS user_name, d.name AS director_name, COUNT(*) 
+FROM users_movies um
+JOIN movies m ON m.movie_id = um.movie_id
+JOIN directors d ON d.director_id = m.director_id
+JOIN users u ON u.user_id = um.user_id
+GROUP BY u.name, d.name;
